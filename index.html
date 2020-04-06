@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCulator</title>
+    <link href="asset/css/style.css" rel="stylesheet">
+    <script src="asset/js/app.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+            <!-- <div id="calculation"></div> -->
+            <input class="calc-operation" type="text" name="calculation" id="calculation">
+
+          </div>
+          <div class="calc-button-row">
+            <button class="button c" id="clear" value=""  onclick="clearInput(document.getElementById('clear').value)">C</button>
+            <button class="button l" id="notEqual" value="!=" onclick="takeValue(document.getElementById('notEqual').value)">≠</button>
+            <button class="button l" id="mod" value="%" onclick="takeValue(document.getElementById('mod').value)">%</button>
+            <button class="button l" id="divide" value="/"  onclick="takeValue(document.getElementById('one').value)">/</button>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" id="seven" value="7"  onclick="takeValue(document.getElementById('seven').value)">7</button>
+            <button class="button" id="eight" value="8"  onclick="takeValue(document.getElementById('eight').value)">8</button>
+            <button class="button" id="nine" value="9"  onclick="takeValue(document.getElementById('nine').value)">9</button>
+            <button class="button l" id="multi" value="*"  onclick="takeValue(document.getElementById('multi').value)" >x</button>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" id="four" value="4"  onclick="takeValue(document.getElementById('four').value)">4</button>
+            <button class="button" id="five" value="5"  onclick="takeValue(document.getElementById('five').value)">5</button>
+            <button class="button" id="six" value="6"  onclick="takeValue(document.getElementById('six').value)">6</button>
+            <button class="button l" id="sub" value="-"  onclick="takeValue(document.getElementById('sub').value)">−</button>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" id="one" value="1"  onclick="takeValue(document.getElementById('one').value)">1</button>
+            <button class="button" id="two" value="2"  onclick="takeValue(document.getElementById('two').value)">2</button>
+            <button class="button" id="three" value="3"  onclick="takeValue(document.getElementById('three').value)">3</button>
+            <button class="button l" id="add" value="+" onclick="takeValue(document.getElementById('add').value)">+</button>
+          </div>
+          <div class="calc-button-row">
+            <button class="button" id="dot" value="."  onclick="takeValue(document.getElementById('dot').value)">.</button>
+            <button class="button" id="zero" value="0"  onclick="takeValue(document.getElementById('zero').value)">0</button>
+            <button class="button" id="power" value="**"  onclick="takeValue(document.getElementById('power').value)">
+              <</button>
+                <button class="button l" id="equalTo" onclick="calculateResult()">=</button>
+            </div>
+          </div>
+        </div>
+    
+</body>
+</html>
